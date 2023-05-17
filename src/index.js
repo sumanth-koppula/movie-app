@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createStore } from 'redux'; 
+import {  createStore} from 'redux'
+//import { Provider } from 'react-redux';
 
 import './index.css';
 import App from './components/App';
@@ -20,7 +21,9 @@ console.log('store',store);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+   
     <App store={store} />
+  
   </React.StrictMode>
 );
 
